@@ -140,7 +140,7 @@ end
 clc;
 end
 
-%% Plot (Figure 10)
+%% Plot (Figure 11)
 colorcode_yellow = [235 149 3]/255;
 
 pi_r([1,6,7,12],:) = [-3,-3,-3; -3,-3,-3; -3,-3,-3; -3,-3,-3]; 
@@ -150,7 +150,7 @@ pi_r(pi_r == -Inf) = -3;   % left bound of pi
 [xct1, xct2] = meshgrid(-3:0.05:5, -3:0.05:5);
 sys_integ = normcdf(-xct1).*normcdf(-xct2);
 
-figure('Renderer', 'painters', 'Position', [10 10 880 1000])   % Figure 10
+figure('Renderer', 'painters', 'Position', [10 10 880 1000])   % Figure 11
 scatter(pi_r(:,1),beta(:,1),150,'bo','LineWidth', 1.5)
 hold on
 scatter(pi_r(:,2),beta(:,2),150,'rx','LineWidth', 1.5)
